@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Модный Текстиль — уют в каждом доме</title>
+<meta name="description" content="Пледы, постельное бельё, подушки и одеяла. Доставка по России.">
+<style>
+:root{--ink:#25231f;--muted:#77736c;--gold:#b58a52;--cream:#f7f4ee;--line:#e9e3d9}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit}.top{background:#24221e;color:#fff;text-align:center;padding:9px 14px;font-size:13px;letter-spacing:.03em}
+header{padding:22px max(5vw,18px);display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:20px}
+.logo{font-family:Georgia,serif;font-size:26px;letter-spacing:.02em}.logo small{display:block;font:10px Arial;letter-spacing:.22em;color:var(--gold);margin-top:5px}
+nav{display:flex;gap:22px;font-size:14px}nav a{text-decoration:none}.phone{font-weight:700;white-space:nowrap}
+.hero{background:linear-gradient(90deg,rgba(20,19,17,.68),rgba(20,19,17,.12)),url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1800&q=85') center/cover;min-height:440px;color:white;display:flex;align-items:center;padding:60px max(7vw,22px)}
+.hero div{max-width:560px}.eyebrow{color:#e8c99e;text-transform:uppercase;letter-spacing:.2em;font-size:12px}
+h1{font:clamp(38px,6vw,64px)/1.05 Georgia,serif;margin:18px 0}.hero p{font-size:17px;line-height:1.6;color:#f4eee5}
+.btn{display:inline-block;background:var(--gold);color:white;padding:14px 22px;text-decoration:none;border:0;cursor:pointer;font-weight:700;border-radius:2px}
+section{padding:62px max(5vw,18px)}.section-head{text-align:center;margin-bottom:32px}.section-head span{color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+h2{font:36px Georgia,serif;margin:10px 0}.section-head p{color:var(--muted);margin:8px 0}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat{min-height:180px;background:var(--cream);padding:26px;display:flex;flex-direction:column;justify-content:end;text-decoration:none;border:1px solid var(--line);transition:.2s}
+.cat:hover{transform:translateY(-3px);border-color:var(--gold)}.cat b{font:25px Georgia,serif}.cat small{color:var(--muted);margin-top:8px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.product{border:1px solid var(--line);background:#fff}.photo{height:230px;background:#eee center/cover;position:relative}
+.photo:after{content:"ФОТО ТОВАРА";position:absolute;bottom:12px;left:12px;background:#ffffffd9;padding:6px 9px;font-size:10px;letter-spacing:.1em;color:#665d50}
+.product-info{padding:17px}.product h3{font:21px Georgia,serif;margin:0 0 7px}.product p{color:var(--muted);font-size:13px;min-height:34px}.product-foot{display:flex;justify-content:space-between;align-items:center;gap:10px}.price{font-weight:700}.add{background:#28251f;color:white;border:0;padding:10px 13px;cursor:pointer}
+.note{background:var(--cream);padding:18px;text-align:center;color:var(--muted);font-size:13px;line-height:1.6;margin-top:22px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.two img{width:100%;height:330px;object-fit:cover}.two p{color:var(--muted);line-height:1.7}
+form{display:grid;gap:12px}input,textarea{width:100%;padding:14px;border:1px solid var(--line);font:14px Arial}textarea{min-height:90px;resize:vertical}
+.cartbox{background:var(--cream);padding:22px;max-width:680px;margin:0 auto}.cart-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);gap:12px}
+footer{background:#24221e;color:white;padding:42px max(5vw,18px);display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}footer p,footer a{color:#d2ccc2;font-size:14px;line-height:1.7}
+@media(max-width:750px){header{flex-wrap:wrap}nav{order:3;width:100%;overflow:auto;gap:16px}.hero{min-height:390px}.categories,.products{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}footer{grid-template-columns:1fr}}
+@media(max-width:460px){.categories,.products{grid-template-columns:1fr}.photo{height:250px}.logo{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="top">ДОСТАВКА ПО ВСЕЙ РОССИИ · МОСКВА И МО — 1 000 ₽</div>
+<header>
+  <div class="logo">Модный Текстиль<small>УЮТ В КАЖДОМ ДОМЕ</small></div>
+  <nav><a href="#catalog">Каталог</a><a href="#about">О магазине</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+  <a class="phone" href="tel:+79997978413">8 999 797-84-13</a>
+</header>
+<div class="hero"><div><div class="eyebrow">Дом начинается с уюта</div><h1>Текстиль, в который хочется укутаться</h1><p>Пледы, постельное бельё, подушки и одеяла для вашего дома. Выберите товары и отправьте заказ менеджеру.</p><a class="btn" href="#catalog">Смотреть каталог</a></div></div>
+
+<section id="catalog">
+ <div class="section-head"><span>Наш ассортимент</span><h2>Каталог товаров</h2><p>Выберите категорию и добавьте товары в корзину</p></div>
+ <div class="categories">
+  <a class="cat" href="#products"><b>Пледы 220 × 240</b><small>Большой размер для уютного отдыха</small></a>
+  <a class="cat" href="#products"><b>Пледы 151 × 220</b><small>Практичный размер на каждый день</small></a>
+  <a class="cat" href="#products"><b>Велюр и бархат</b><small>Комплекты с готовым одеялом</small></a>
+  <a class="cat" href="#products"><b>Хлопковое бельё</b><small>Классика для комфортного сна</small></a>
+  <a class="cat" href="#products"><b>Подушки</b><small>Мягкость и поддержка</small></a>
+  <a class="cat" href="#products"><b>Одеяла</b><small>Отдельные одеяла для дома</small></a>
+ </div>
+</section>
+<section id="products" style="background:#fbfaf8">
+ <div class="section-head"><span>Подборка</span><h2>Популярные товары</h2><p>Цены и фотографии из Telegram добавляются после сверки конкретных публикаций</p></div>
+ <div class="products" id="productGrid"></div>
+ <div class="note">Фотографии в этой предварительной версии — временные иллюстрации, не фотографии товаров из вашего канала. Откройте <a href="https://t.me/s/FashionHom1" target="_blank">публикации Telegram</a> для просмотра оригинального ассортимента.</div>
+</section>
+<section id="about">
+ <div class="two"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" alt="Уютный интерьер"><div><div class="eyebrow">ООО «Модный Текстиль»</div><h2>Уют в каждом доме</h2><p>Подбираем домашний текстиль, который помогает создать тёплую и красивую атмосферу. В каталоге — пледы, комплекты постельного белья, подушки и одеяла.</p><a class="btn" href="https://t.me/FashionHom1" target="_blank">Наш Telegram-канал</a></div></div>
+</section>
+<section id="delivery" style="background:var(--cream)">
+ <div class="section-head"><span>Удобно и просто</span><h2>Доставка и оплата</h2></div>
+ <div class="two"><div><h3>Доставка по России</h3><p>Отправляем заказы по всей России. Доставка по Москве и Московской области — 1 000 ₽. Итоговую стоимость и сроки менеджер подтвердит после оформления заказа.</p></div><div><h3>Самовывоз / адрес магазина</h3><p>Московская область, пгт Октябрьский, улица Ленина, 47.</p><a href="https://yandex.ru/maps/?text=Московская%20область%20пгт%20Октябрьский%20улица%20Ленина%2047" target="_blank">Посмотреть адрес на карте</a></div></div>
+</section>
+<section id="order">
+ <div class="section-head"><span>Ваш заказ</span><h2>Корзина и оформление</h2><p>Заполните контакты — заказ автоматически отправится менеджеру в Telegram</p></div>
+ <div class="cartbox"><div id="cartItems">Корзина пока пуста</div><p><b id="total">Итого: цена уточняется</b></p>
+ <form id="orderForm"><input id="customer" placeholder="Ваше имя" required><input id="tel" placeholder="Телефон для связи" type="tel" required><textarea id="address" placeholder="Адрес доставки" required></textarea><textarea id="comment" placeholder="Комментарий к заказу (необязательно)"></textarea><button class="btn" type="submit">Оформить заказ</button></form>
+ <p id="orderStatus" style="font-size:12px;color:#777" aria-live="polite">Заказ будет передан менеджеру через защищённый сервер.</p>
+ </div>
+</section>
+<footer id="contacts"><div><div class="logo">Модный Текстиль<small>УЮТ В КАЖДОМ ДОМЕ</small></div><p>ООО «Модный Текстиль»<br>Доставка по всей России</p></div><div><b>Контакты</b><p><a href="tel:+79997978413">8 999 797-84-13</a><br><a href="https://t.me/gurban95" target="_blank">Менеджер: @gurban95</a></p></div><div><b>Адрес</b><p>Московская область,<br>пгт Октябрьский,<br>улица Ленина, 47</p></div></footer>
+<script>
+const items=[
+ {id:1,name:"Плед 220 × 240 см",desc:"Мягкий плед для дома",img:"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"},
+ {id:2,name:"Плед 151 × 220 см",desc:"Уютный плед компактного размера",img:"https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=800&q=80"},
+ {id:3,name:"Комплект велюровый / бархатный",desc:"Постельное бельё с готовым одеялом",img:"https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"},
+ {id:4,name:"Комплект хлопковый",desc:"Классическое хлопковое постельное бельё",img:"https://images.unsplash.com/photo-1631049035182-249067d7618e?auto=format&fit=crop&w=800&q=80"},
+ {id:5,name:"Подушка",desc:"Подушки для комфортного отдыха",img:"https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80"},
+ {id:6,name:"Одеяло",desc:"Одеяло отдельно",img:"https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=800&q=80"}
+];
+let cart={};
+const grid=document.getElementById('productGrid');
+items.forEach(p=>{const el=document.createElement('article');el.className='product';el.innerHTML=`<div class="photo" style="background-image:url('${p.img}')"></div><div class="product-info"><h3>${p.name}</h3><p>${p.desc}</p><div class="product-foot"><span class="price">Цена уточняется</span><button class="add">В корзину</button></div></div>`;el.querySelector('button').onclick=()=>{cart[p.id]=(cart[p.id]||0)+1;renderCart()};grid.appendChild(el)});
+function renderCart(){const box=document.getElementById('cartItems');const selected=items.filter(p=>cart[p.id]);box.innerHTML=selected.length?selected.map(p=>`<div class="cart-row"><span>${p.name}</span><span><button onclick="change(${p.id},-1)">−</button> ${cart[p.id]} <button onclick="change(${p.id},1)">+</button></span></div>`).join(''):'Корзина пока пуста';document.getElementById('total').textContent=selected.length?'Итого: стоимость подтвердит менеджер':'Итого: цена уточняется'}
+function change(id,n){cart[id]=(cart[id]||0)+n;if(cart[id]<=0)delete cart[id];renderCart()}
+document.getElementById('orderForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const selected=items.filter(p=>cart[p.id]);
+ const status=document.getElementById('orderStatus');
+ if(!selected.length){alert('Добавьте товары в корзину');return}
+ const button=e.currentTarget.querySelector('button[type="submit"]');
+ button.disabled=true;button.textContent='Отправляем заказ…';status.textContent='Пожалуйста, подождите.';
+ const payload={
+  customer:document.getElementById('customer').value.trim(),
+  phone:document.getElementById('tel').value.trim(),
+  address:document.getElementById('address').value.trim(),
+  comment:document.getElementById('comment').value.trim(),
+  items:selected.map(p=>({name:p.name,quantity:cart[p.id]}))
+ };
+ try{
+  const response=await fetch('/api/order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  const result=await response.json().catch(()=>({}));
+  if(!response.ok)throw new Error(result.error||'Не удалось отправить заказ');
+  status.textContent='Спасибо! Заказ отправлен менеджеру. Мы свяжемся с вами.';
+  cart={};renderCart();e.currentTarget.reset();
+ }catch(err){
+  status.textContent='Не удалось отправить заказ: '+err.message+'. Позвоните 8 999 797-84-13 или напишите @gurban95.';
+ }finally{button.disabled=false;button.textContent='Оформить заказ'}
+});
+</script>
+</body></html>
