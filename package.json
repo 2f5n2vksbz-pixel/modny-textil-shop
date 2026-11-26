@@ -1,0 +1,10 @@
+{
+  "name": "modny-textil-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Модный Текстиль — интернет-магазин с отправкой заказов в Telegram",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.21.2" }
+}
